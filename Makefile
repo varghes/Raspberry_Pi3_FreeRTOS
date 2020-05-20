@@ -70,4 +70,4 @@ kernel.img : raspberrypi.ld $(OBJS)
 	$(ARMGNU)-objdump -D freertos_bcm2837.elf > freertos_bcm2837.list
 	$(ARMGNU)-objcopy freertos_bcm2837.elf -O ihex freertos_bcm2837.hex
 	$(ARMGNU)-objcopy freertos_bcm2837.elf -O binary freertos_bcm2837.bin
-	$(ARMGNU)-objcopy freertos_bcm2837.elf. -O binary kernel.img
+	$(ARMGNU)-objcopy freertos_bcm2837.elf -O binary kernel.img
